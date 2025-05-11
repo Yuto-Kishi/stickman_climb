@@ -115,7 +115,7 @@
   <joint name="left_hip" type="revolute">
     <parent link="torso"/>
     <child link="left_thigh"/>
-    <origin xyz="0.05 0 -0.2" rpy="0 0 0"/>
+    <origin xyz="0.1 0 -0.2" rpy="0 0 0"/>  <!-- 👈 安定性向上のために左右に広げた -->
     <axis xyz="1 0 0"/>
     <limit lower="-1.5" upper="1.5" effort="50" velocity="2"/>
   </joint>
@@ -131,7 +131,7 @@
   <joint name="right_hip" type="revolute">
     <parent link="torso"/>
     <child link="right_thigh"/>
-    <origin xyz="-0.05 0 -0.2" rpy="0 0 0"/>
+    <origin xyz="-0.1 0 -0.2" rpy="0 0 0"/> <!-- 👈 安定性向上のために左右に広げた -->
     <axis xyz="1 0 0"/>
     <limit lower="-1.5" upper="1.5" effort="50" velocity="2"/>
   </joint>
